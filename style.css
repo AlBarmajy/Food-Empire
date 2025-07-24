@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Sacramento&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    overflow-x: hidden;
+    background-color: #000;
+}
+
+.home{
+    background-color: #000;
+    color: white;
+}
+
+.container{
+    min-height: 100vh;
+    height: auto;
+    margin-left: 5rem;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 8px black ;
+    position: sticky;
+    top: 0;
+    background-color: #000;
+    padding: 15px 0 0 15px;
+    z-index: 10;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+nav ul li{
+    padding: 20px;
+    font-weight: 200;
+    color: #DEDEDE;
+}
+
+ul .icon1{
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+ul .icon2{
+    margin: 0 4rem 0 -1rem;
+    cursor: pointer;
+}
+
+nav ul a{
+    text-decoration: none;
+    color: white;
+}
+
+.logo div{
+    font-size: 2rem;
+    line-height: 1;
+}
+
+.food{
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+}
+.empire{
+    font-family: "Sacramento", cursive;
+}
+
+.home .land-page{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: radial-gradient(
+        circle at center,
+        rgb(38, 36, 36) 0%, 
+        rgb(22, 22, 22) 50%,
+        rgb(0, 0, 0) 100%    
+    );
+}
+
+.home .land-page .content-text1{
+    align-self: flex-start;
+    margin-top: 4rem;
+    width: 25%;
+    margin-left: 15px;
+}
+
+.home .land-page .content-text1 .txt1{
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+.home .land-page .content-text1  .txt1 .num{
+    color: #B0B0B0;
+}
+
+.home .land-page .content-text1 .txt2{
+    color: #B0B0B0;
+    font-weight: 100;
+}
+
+.home .land-page > .pinaple-img{
+    width: 500px;
+    height: 600px;
+    object-fit: contain;
+}
+
+.home .land-page .content-text2{
+    align-self: flex-start;
+    margin: 8rem 8rem 0 0;
+    width: 370px;
+
+}
+
+.home .land-page .content-text2 .txt1{
+    font-weight: 700;
+    font-size: 4rem;
+    margin-bottom: 10rem;
+}
+
+.home .land-page .content-text2 .txt1 .sub-txt{
+    font-weight: 400;
+    font-size: 1rem;
+    font-family: "Sacramento", cursive;
+    color: #DEC700;
+}
+
+.home .land-page .content-text2 .txt2{
+    font-weight: 100;
+    color: #B0B0B0;
+}
+
+.home .social{
+    position: fixed;
+    top: 130px;
+    right: 0;
+    height: 170px;
+    width: 45px;
+    background-color: #DEC700;
+    border-radius: 33px 0 0 33px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+}
+
+/* Fruits Section */
+
+.home .fruits-section{
+    margin-top: -120px;
+    display: flex;
+    background-color: rgb(67, 60, 60);
+    height: 200px;
+}
+
+.fruit-card{
+    display: flex;
+    background-color: transparent;
+    width: 50%;
+}
+
+.fruit-card .card-content{
+    background: transparent ;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 25px;
+    padding-right: 50px;
+}
+
+.card-content h4{
+    font-weight: 400;
+}
+
+.card-content button{
+    background-color: #DEC700;
+    width: 6rem;
+    height: 3rem;
+    border: none;
+}
+
+.fruit-card img{
+    width: 250px;
+}
+
+.fruit-card .card-content .description{
+    font-weight: 100;
+    font-size: 12px;
+}
