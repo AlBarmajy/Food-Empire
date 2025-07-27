@@ -1,33 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Sacramento&display=swap');
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: "Roboto", sans-serif;
     overflow-x: hidden;
     background-color: #000;
 }
 
-.home{
+.home {
     background-color: #000;
     color: white;
 }
 
-.container{
+.container {
     min-height: 100vh;
     height: auto;
     margin-left: 5rem;
 }
 
-nav{
+/* Start Nav */
+
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 0 8px black ;
+    box-shadow: 0 0 8px black;
     position: sticky;
     top: 0;
     background-color: #000;
@@ -35,111 +37,118 @@ nav{
     z-index: 10;
 }
 
-nav ul{
+nav ul {
     display: flex;
     align-items: center;
     list-style: none;
 }
 
-nav ul li{
+nav ul li {
     padding: 20px;
     font-weight: 200;
     color: #DEDEDE;
 }
 
-ul .icon1{
+ul .icon1 {
     margin-left: 30px;
     cursor: pointer;
 }
 
-ul .icon2{
+ul .icon2 {
     margin: 0 4rem 0 -1rem;
     cursor: pointer;
 }
 
-nav ul a{
+nav ul a {
     text-decoration: none;
     color: white;
 }
 
-.logo div{
+.logo div {
     font-size: 2rem;
     line-height: 1;
 }
 
-.food{
+.food {
     font-family: "Roboto", sans-serif;
     font-weight: 700;
 }
-.empire{
+
+.empire {
     font-family: "Sacramento", cursive;
 }
 
-.home .land-page{
+/* End Nav */
+
+/* Start Landing Page */
+.home .land-page {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-image: radial-gradient(
-        circle at center,
-        rgb(38, 36, 36) 0%, 
-        rgb(22, 22, 22) 50%,
-        rgb(0, 0, 0) 100%    
-    );
+    background-image: radial-gradient(circle at center,
+            rgb(38, 36, 36) 0%,
+            rgb(22, 22, 22) 50%,
+            rgb(0, 0, 0) 100%);
+    position: relative;
+    height: 120vh;
 }
 
-.home .land-page .content-text1{
+.home .land-page .content-text1 {
     align-self: flex-start;
     margin-top: 4rem;
     width: 25%;
     margin-left: 15px;
+    z-index: 2;
 }
 
-.home .land-page .content-text1 .txt1{
+.home .land-page .content-text1 .txt1 {
     font-size: 24px;
     line-height: 1.5;
 }
 
-.home .land-page .content-text1  .txt1 .num{
+.home .land-page .content-text1 .txt1 .num {
     color: #B0B0B0;
 }
 
-.home .land-page .content-text1 .txt2{
+.home .land-page .content-text1 .txt2 {
     color: #B0B0B0;
     font-weight: 100;
 }
 
-.home .land-page > .pinaple-img{
+.home .land-page>.pinaple-img {
     width: 500px;
-    height: 600px;
-    object-fit: contain;
+    height: 700px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
 }
 
-.home .land-page .content-text2{
+.home .land-page .content-text2 {
     align-self: flex-start;
     margin: 8rem 8rem 0 0;
     width: 370px;
-
+    z-index: 2;
 }
 
-.home .land-page .content-text2 .txt1{
+.home .land-page .content-text2 .txt1 {
     font-weight: 700;
     font-size: 4rem;
     margin-bottom: 10rem;
 }
 
-.home .land-page .content-text2 .txt1 .sub-txt{
+.home .land-page .content-text2 .txt1 .sub-txt {
     font-weight: 400;
     font-size: 1rem;
     font-family: "Sacramento", cursive;
     color: #DEC700;
 }
 
-.home .land-page .content-text2 .txt2{
+.home .land-page .content-text2 .txt2 {
     font-weight: 100;
     color: #B0B0B0;
 }
 
-.home .social{
+.home .social {
     position: fixed;
     top: 130px;
     right: 0;
@@ -154,45 +163,95 @@ nav ul a{
     padding: 10px;
 }
 
-/* Fruits Section */
-
-.home .fruits-section{
-    margin-top: -120px;
+.land-page .fruits-section {
     display: flex;
-    background-color: rgb(67, 60, 60);
+    position: absolute;
+    bottom: 0;
+}
+
+.land-page .fruits-section .fruit-card {
+    display: flex;
+}
+
+.land-page .fruits-section img {
     height: 200px;
+    width: 400px;
 }
 
-.fruit-card{
-    display: flex;
-    background-color: transparent;
-    width: 50%;
-}
-
-.fruit-card .card-content{
-    background: transparent ;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    padding: 25px;
-    padding-right: 50px;
-}
-
-.card-content h4{
+.fruits-section .card-content h4 {
     font-weight: 400;
+    margin: 20px 0 0 20px;
 }
 
-.card-content button{
-    background-color: #DEC700;
-    width: 6rem;
-    height: 3rem;
-    border: none;
+.fruits-section .card-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    background-color: rgba(126, 121, 115, 0.579);
 }
 
-.fruit-card img{
-    width: 250px;
+.fruits-section .card-content p {
+    grid-column: 1;
 }
 
-.fruit-card .card-content .description{
+.fruits-section .card-content .para2 {
+    grid-column: 1/3;
+}
+
+.fruits-section .card-content p {
     font-weight: 100;
     font-size: 12px;
+    margin-left: 20px;
 }
+
+.fruits-section .card-content button {
+    background-color: #DEC700;
+    color: #fff;
+    border: none;
+    padding: .5rem 1rem;
+    font-size: 12px;
+    border-radius: 2px;
+}
+
+.fruits-section .card-content .old-price {
+    text-decoration: line-through;
+    color: #DEDEDE;
+    font-size: 14px;
+}
+
+.fruits-section .card-content .current-price {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.fruits-section .card-content .price {
+    margin-bottom: 5px;
+}
+
+.fruits-section .card-content .buy {
+    display: flex;
+    flex-direction: column;
+    grid-column: 2;
+    grid-row: 2;
+    align-items: center;
+}
+
+.fruits-section .dots .dot {
+    height: 11px;
+    width: 11px;
+    border-radius: 50%;
+    background-color: #555555;
+    margin: 5px;
+}
+
+.fruits-section .dots .active {
+
+    background-color: white;
+}
+
+.fruits-section .dots{
+    grid-column: 1/3;
+    display: flex;
+    justify-content: center;
+}
+/* End Landing Page */
